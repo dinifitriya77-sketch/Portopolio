@@ -103,18 +103,18 @@ nav ul li a:hover { color: #8b5a2b; }
 }
 .btn-project:hover { background: #8b5a2b; }
 
-/* --- CERTIFICATES SECTION (BARU & SEJAJAR) --- */
+/* --- CERTIFICATES SECTION --- */
 .certificates-section { padding: 80px 0; background-color: #fdf5e6; }
 
 .cert-grid {
     display: grid;
-    grid-template-columns: repeat(2, 1fr); /* SEJAJAR 2 KOLOM */
-    gap: 25px;
+    grid-template-columns: repeat(2, 1fr); /* SEJAJAR KIRI-KANAN */
+    gap: 30px;
     margin-top: 30px;
 }
 
 .cert-card {
-    background: #fff;
+    background: #ffffff;
     padding: 40px 30px;
     border-radius: 20px;
     border: 1px solid #e0d5c1;
@@ -125,6 +125,7 @@ nav ul li a:hover { color: #8b5a2b; }
     align-items: center;
     min-height: 250px;
     transition: 0.4s ease;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
 }
 
 .cert-card:hover {
@@ -134,9 +135,7 @@ nav ul li a:hover { color: #8b5a2b; }
 }
 
 .cert-icon { font-size: 40px; color: #8b5a2b; margin-bottom: 15px; }
-
 .cert-card h3 { font-size: 1.2rem; color: #5d4037; margin-bottom: 10px; line-height: 1.4; }
-
 .cert-card p { font-size: 0.9rem; color: #8b5a2b; margin-bottom: 20px; font-weight: 500; }
 
 .btn-view {
@@ -144,13 +143,10 @@ nav ul li a:hover { color: #8b5a2b; }
     border: 1.5px solid #5d4037; padding: 8px 20px; border-radius: 8px;
     transition: 0.3s; margin-top: auto;
 }
-
 .btn-view:hover { background-color: #5d4037; color: #ffffff; }
 
 /* --- FOOTER --- */
 footer {
-    text-align: center; padding: 40px; background
-    footer {
     padding: 40px 0;
     background-color: #fff;
     text-align: center;
@@ -179,4 +175,14 @@ footer p {
 .footer-socials a:hover {
     color: #5d4037;
     transform: scale(1.1);
+}
+
+/* RESPONSIVE UNTUK HP */
+@media (max-width: 768px) {
+    .cert-grid {
+        grid-template-columns: 1fr;
+    }
+    .hero, .project-card-v2 {
+        flex-direction: column;
+    }
 }
