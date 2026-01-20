@@ -1,0 +1,180 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #121212; /* Warna Hitam Background */
+    color: white;
+    font-family: 'Inter', sans-serif;
+    padding: 0 10%;
+}
+
+/* Navbar */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 0;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+/* Hero Section */
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 80vh;
+    gap: 50px;
+}
+
+.content { flex: 1; }
+
+.badge {
+    background: #1e1e1e;
+    display: inline-flex;
+    align-items: center;
+    padding: 8px 15px;
+    border-radius: 10px;
+    border: 1px solid #333;
+    margin-bottom: 20px;
+}
+
+.badge img { border-radius: 50%; margin-right: 10px; }
+.badge span { font-size: 14px; color: #ccc; }
+
+h1 {
+    font-size: 60px;
+    margin-bottom: 20px;
+}
+
+p {
+    color: #888;
+    line-height: 1.6;
+    margin-bottom: 30px;
+    max-width: 500px;
+}
+
+/* Tombol */
+.buttons { display: flex; gap: 15px; }
+
+.btn {
+    padding: 12px 25px;
+    border-radius: 12px;
+    text-decoration: none;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.btn-purple { background-color: #7000FF; color: white; }
+.btn-dark { background-color: #2A2A2A; color: white; }
+
+/* Bagian Foto */
+.image-section { flex: 1; display: flex; justify-content: flex-end; }
+
+.photo-card {
+    width: 400px;
+    height: 500px;
+    background: linear-gradient(180deg, #333, #7000FF); /* Gradasi ungu di gambar */
+    border-radius: 25px;
+    overflow: hidden;
+}
+
+.photo-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    mix-blend-mode: luminosity; /* Membuat foto hitam putih menyatu dengan warna */
+    opacity: 0.9;
+}
+/* Styling untuk Kartu Tentang */
+.about-card-section {
+    padding: 40px 8%;
+    display: flex;
+    justify-content: center;
+}
+
+.about-card {
+    background-color: #1e1e1e; /* Warna abu gelap sesuai gambar */
+    padding: 40px;
+    border-radius: 20px;
+    max-width: 900px;
+    width: 100%;
+}
+
+.about-text {
+    font-size: 18px;
+    color: #efefef;
+    line-height: 1.6;
+    margin-bottom: 40px;
+}
+
+.card-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.profile-small img {
+    width: 50px;
+    height: 50px;
+    border-radius: 12px;
+    background: linear-gradient(to bottom, #7000FF, #333);
+    object-fit: cover;
+}
+
+.stats-container {
+    display: flex;
+    gap: 40px;
+}
+
+.stat-item {
+    text-align: left;
+}
+
+.stat-item h2 {
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+.stat-item h2 span {
+    color: #7000FF; /* Warna ungu pada tanda + */
+}
+
+.stat-item p {
+    font-size: 14px;
+    color: #888;
+    margin-bottom: 0;
+}
+
+/* Responsif untuk tampilan HP */
+@media (max-width: 600px) {
+    .card-footer {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+    }
+    .stats-container {
+        gap: 20px;
+    }
+}
